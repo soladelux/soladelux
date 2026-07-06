@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== SEO META ===== -->
+    <title>FAQ - 50 Questions Fréquentes | SOLA DE LUXE Brazzaville</title>
+    <meta name="description" content="Consultez notre Foire Aux Questions complète (50 questions). Toutes les réponses sur la friperie haut de gamme, l'authenticité, les commandes via WhatsApp, les livraisons et retours.">
+    <link rel="canonical" href="https://soladelux.netlify.app/faq.html" />
+
+    <!-- ===== Balises Open Graph ===== -->
+    <meta property="og:title" content="FAQ Complète | Sola de Luxe" />
+    <meta property="og:description" content="50 réponses détaillées concernant nos vêtements premium, nos commandes et nos livraisons." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://soladelux.netlify.app/faq.html" />
+    <meta property="og:image" content="https://soladelux.netlify.app/img/LogoWeb.png" />
+
+    <!-- ===== Données Structurées FAQ (Schema.org) - Essentiel pour le SEO ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce qu'une friperie haut de gamme ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Une friperie haut de gamme comme SOLA DE LUXE sélectionne uniquement des vêtements de marques prestigieuses et de qualité supérieure. Contrairement à la friperie classique en vrac, nous trions drastiquement (seulement 35% des pièces examinées sont retenues) pour vous garantir des vêtements sans défauts, souvent comme neufs, prêts à être portés."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment passer une commande sur SOLA DE LUXE ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sélectionnez l'article qui vous plaît, cliquez sur 'Commander sur WhatsApp'. Vous serez redirigé vers notre service client qui vérifiera la disponibilité, validera votre taille et finalisera votre achat sans paiement en ligne direct."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels sont les délais et zones de livraison ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nous livrons à Brazzaville (le jour même pour les commandes avant 14h), ainsi qu'à Pointe-Noire, Dolisie et N'kayi sous 24 à 48 heures. Les frais varient selon la destination (1000 FCFA à Brazzaville, 2000 FCFA en province)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puis-je retourner un article s'il ne me va pas ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Étant donné qu'il s'agit de pièces uniques de seconde main, les retours pour simple changement d'avis ou erreur de taille ne sont pas acceptés. Toutefois, un échange ou remboursement est possible si l'article présente un défaut majeur non signalé lors de la vente, sous 24h après réception."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="fa/all.min.css">
+    <link rel="shortcut icon" href="img/LogoWeb.png" type="image/x-icon">
+    
+    <style>
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        :root{
+            --white:#FFFFFF;--black:#000000;--gold:#D4AF37;--gold-light:#E8D48B;--gold-dark:#B8960C;
+            --gray-50:#FAFAFA;--gray-100:#F5F5F5;--gray-200:#E5E5E5;--gray-300:#D4D4D4;
+            --gray-400:#A3A3A3;--gray-500:#737373;--gray-600:#525252;--gray-700:#404040;
+            --gray-800:#262626;--gray-900:#171717;
+            --font:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+            --transition:all .3s cubic-bezier(.25,.46,.45,.94);
+            --shadow-md:0 4px 16px rgba(0,0,0,.08);--shadow-lg:0 10px 40px rgba(0,0,0,.12);
+            --shadow-xl:0 20px 60px rgba(0,0,0,.15);--radius:12px;
+        }
+        html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+        body{font-family:var(--font);background:var(--white);color:var(--black);line-height:1.6;overflow-x:hidden}
+        a{text-decoration:none;color:inherit}ul,ol{list-style:none}img{max-width:100%;display:block;height:auto}
+        button{cursor:pointer;border:none;outline:none;font-family:var(--font)}
+
+        /* ===== HEADER ===== */
+        .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--gray-200);transition:var(--transition)}
+        .header.scrolled{box-shadow:0 2px 20px rgba(0,0,0,.06)}
+        .header-inner{max-width:1280px;margin:0 auto;padding:0 24px;height:72px;display:flex;align-items:center;justify-content:space-between}
+        .logo{display:flex;align-items:center;gap:10px;z-index:1001}
+        .nav-desktop{display:none;align-items:center;gap:28px}
+        .nav-desktop a{font-size:11px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:var(--gray-600);transition:var(--transition);position:relative}
+        .nav-desktop a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--gold);transition:width .3s ease}
+        .nav-desktop a:hover{color:var(--black)}
+        .nav-desktop a:hover::after{width:100%}
+        .header-actions{display:flex;align-items:center;gap:16px;z-index:1001}
+        .menu-toggle{display:flex;flex-direction:column;gap:5px;background:none;padding:8px;z-index:1001}
+        .menu-toggle span{display:block;width:22px;height:2px;background:var(--black);border-radius:2px;transition:var(--transition)}
+        .menu-toggle.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+        .menu-toggle.active span:nth-child(2){opacity:0}
+        .menu-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+        .nav-mobile{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;opacity:0;pointer-events:none;transition:opacity .4s ease}
+        .nav-mobile.active{opacity:1;pointer-events:all}
+        .nav-mobile a{font-size:24px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--black);transition:var(--transition)}
+        .nav-mobile a:hover{color:var(--gold)}
+
+        /* ===== PAGE HERO ===== */
+        .page-hero{position:relative;padding:140px 24px 60px;background:var(--gray-900);overflow:hidden;text-align:center}
+        .page-hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,rgba(212,175,55,.1) 0%,transparent 50%);pointer-events:none}
+        .page-hero-content{position:relative;z-index:2;max-width:800px;margin:0 auto}
+        .page-hero h1{font-size:clamp(36px,6vw,56px);font-weight:800;color:var(--white);letter-spacing:-2px;margin-bottom:16px;line-height:1.1}
+        .page-hero h1 .gold-text{background:linear-gradient(135deg,var(--gold-light),var(--gold),var(--gold-dark));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .page-hero p{font-size:16px;color:rgba(255,255,255,.7);max-width:600px;margin:0 auto}
+
+        /* ===== FAQ SECTION ===== */
+        .faq-section{padding:80px 24px;background:var(--white)}
+        .faq-inner{max-width:800px;margin:0 auto}
+        .faq-category{margin-bottom:48px}
+        .faq-category-title{font-size:16px;font-weight:800;color:var(--gold);text-transform:uppercase;letter-spacing:2px;margin-bottom:20px;padding-left:16px;border-left:3px solid var(--gold)}
+        
+        .faq-item{border:1px solid var(--gray-200);border-radius:12px;margin-bottom:16px;overflow:hidden;transition:var(--transition);background:var(--white)}
+        .faq-item:hover{border-color:rgba(212,175,55,.3);box-shadow:0 4px 16px rgba(0,0,0,.04)}
+        .faq-item.active{border-color:var(--gold);box-shadow:0 4px 24px rgba(212,175,55,.1)}
+        
+        .faq-question{width:100%;padding:20px 24px;background:none;display:flex;justify-content:space-between;align-items:center;gap:16px;font-weight:700;color:var(--black);text-align:left;font-size:16px;transition:var(--transition)}
+        .faq-question:hover{color:var(--gold-dark)}
+        .faq-item.active .faq-question{color:var(--gold-dark)}
+        .faq-question i{color:var(--gold);font-size:16px;transition:transform .3s ease;flex-shrink:0}
+        .faq-item.active .faq-question i{transform:rotate(180deg)}
+        
+        .faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .4s ease;padding:0 24px;color:var(--gray-600);line-height:1.7;font-size:14px}
+        .faq-item.active .faq-answer{padding:0 24px 24px;max-height:1000px}
+        
+        .faq-answer p{margin-bottom:8px}
+        .faq-answer a{color:var(--gold-dark);font-weight:600;text-decoration:underline}
+
+        /* ===== CONTACT CTA ===== */
+        .faq-cta{background:var(--gray-50);padding:80px 24px;text-align:center}
+        .faq-cta-inner{max-width:700px;margin:0 auto}
+        .faq-cta-icon{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--gold-light),var(--gold));display:flex;align-items:center;justify-content:center;margin:0 auto 24px;color:var(--black);font-size:24px}
+        .faq-cta h2{font-size:clamp(24px,4vw,32px);font-weight:800;color:var(--black);letter-spacing:-1px;margin-bottom:12px}
+        .faq-cta p{font-size:15px;color:var(--gray-500);margin-bottom:32px}
+        .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 36px;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border-radius:100px;transition:var(--transition);white-space:nowrap;border:2px solid transparent}
+        .btn-primary{background:var(--gold);color:var(--white)}
+        .btn-primary:hover{background:var(--black);border-color:var(--gold);color:var(--white);transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.2)}
+        .btn-whatsapp{background:#25D366;color:var(--white)}
+        .btn-whatsapp:hover{background:#1DA851;transform:translateY(-2px);box-shadow:0 8px 30px rgba(37,211,102,.3)}
+
+        /* ===== FOOTER ===== */
+        .footer{background:var(--gray-900);padding:64px 24px 0}
+        .footer-inner{max-width:1280px;margin:0 auto}
+        .footer-grid{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.08)}
+        .footer-brand .logo{margin-bottom:16px}
+        .footer-brand p{font-size:14px;color:rgba(255,255,255,.4);line-height:1.8;margin-bottom:24px;max-width:300px}
+        .footer-social{display:flex;gap:12px}
+        .footer-social a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:16px;transition:var(--transition)}
+        .footer-social a:hover{background:var(--gold);border-color:var(--gold);color:var(--black);transform:translateY(-2px)}
+        .footer-column h4{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--white);margin-bottom:20px}
+        .footer-column ul li{margin-bottom:12px}
+        .footer-column ul li a{font-size:14px;color:rgba(255,255,255,.4);transition:var(--transition)}
+        .footer-column ul li a:hover{color:var(--gold)}
+        .footer-contact li{display:flex;align-items:flex-start;gap:12px;margin-bottom:16px!important}
+        .footer-contact li i{color:var(--gold);font-size:14px;margin-top:3px}
+        .footer-contact li span{font-size:14px;color:var(--gray-400)}
+        .footer-bottom{padding:28px 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px}
+        .footer-bottom p{font-size:12px;color:rgba(255,255,255,.3)}
+        .footer-bottom .gold{color:var(--gold)}
+
+        /* ===== RESPONSIVE ===== */
+        @media(min-width:768px){
+            .nav-desktop{display:flex}
+            .menu-toggle{display:none}
+            .footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}
+        }
+        @media(min-width:1280px){
+            .header-inner{padding:0 48px}
+        }
+    </style>
+</head>
+<body>
+       <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <div> <img src="img/LogoWeb.png"  width="250" alt="Logo SOLA DE LUXE"> </div>
+            </a>
+            <nav class="nav-desktop" aria-label="Navigation principale">
+                <a href="index.html#collections"><b>Collections</b></a>
+                <a href="index.html#nouveautes"><b>Nouveautés</b></a>
+                <a href="index.html#apart"><b>Pourquoi nous</b></a>
+                <a href="index.html#zones"><b>Zone de service</b></a>
+                <a href="faq.html"><b>FAQ</b></a>
+                <a href="index.html#contact"><b>Contact</b></a>
+            </nav>
+            <div class="header-actions">
+                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+    <nav class="nav-mobile" id="navMobile" aria-label="Navigation mobile">
+        <a href="index.html#collections" onclick="closeMobileMenu()">Collections</a>
+        <a href="index.html#nouveautes" onclick="closeMobileMenu()">Nouveautés</a>
+        <a href="index.html#apart" onclick="closeMobileMenu()">Pourquoi nous</a>
+        <a href="index.html#zones" onclick="closeMobileMenu()">Zone de service</a>
+        <a href="faq.html" onclick="closeMobileMenu()">FAQ</a>
+        <a href="index.html#contact" onclick="closeMobileMenu()">Contact</a>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Foire Aux <span class="gold-text">Questions</span></h1>
+            <p>Vous avez une question ? Nous avons sûrement la réponse. Trouvez ici 50 réponses détaillées concernant nos vêtements premium, nos commandes et nos livraisons.</p>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq-inner">
+            
+            <!-- Catégorie 1 : Concept et Généralités (1-8) -->
+            <div class="faq-category">
+                <h3 class="faq-category-title">1. Concept et Généralités</h3>
+                
+                <div class="faq-item active"><button type="button" class="faq-question">1. Qu'est-ce qu'une friperie haut de gamme ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Une friperie haut de gamme comme SOLA DE LUXE sélectionne uniquement des vêtements de marques prestigieuses et de qualité supérieure. Contrairement à la friperie classique en vrac, nous trions drastiquement : seulement 35% des pièces examinées sont retenues. L'objectif est de vous garantir des vêtements sans défauts, souvent "comme neufs", prêts à être portés pour vos rendez-vous importants ou au bureau.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">2. Pourquoi choisir des vêtements de seconde main ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Choisir la seconde main est un acte de mode responsable. Cela permet de réduire drastiquement l'empreinte environnementale de l'industrie textile en donnant une seconde vie à des pièces d'exception. De plus, cela vous permet d'accéder à des marques de luxe et de créateurs à des prix infiniment plus accessibles que le neuf.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">3. Quelle est la différence avec la friperie classique ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>La friperie classique propose souvent des vêtements en très grande quantité, non triés et parfois de qualité aléatoire. SOLA DE LUXE agit comme un curateur : nous sélectionnons une à une les pièces, nous vérifions leur authenticité, nous éliminons celles qui ont des défauts, et nous les présentons avec des photos professionnelles et une description détaillée.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">4. SOLA DE LUXE est-elle une marque de vêtements ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Non, SOLA DE LUXE n'est pas une marque qui fabrique des vêtements. Nous sommes une boutique de revente (friperie) qui sélectionne et commercialise des vêtements d'autres grandes marques (Ralph Lauren, Massimo Dutti, Hugo Boss, etc.) que nous authentifions au préalable.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">5. Où se situe votre boutique physique ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>SOLA DE LUXE est une boutique 100% en ligne. Nous n'avons pas de showroom physique ouvert au public pour le moment. Cela nous permet de réduire nos coûts fixes et de vous proposer des vêtements premium au meilleur prix. Des points de retrait sécurisés à Brazzaville peuvent toutefois être organisés sur rendez-vous.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">6. Comment puis-je vous contacter ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Notre canal de communication principal est WhatsApp au +242 06 497 63 34. Vous pouvez également nous suivre sur Instagram, Facebook et TikTok (@soladelux) pour découvrir nos nouveautés, ou utiliser le formulaire de contact disponible sur notre site.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">7. Quels sont vos horaires de service client ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Notre service client est disponible du Lundi au Samedi, de 07H30 à 18H30. Nous nous efforçons de répondre à tous les messages WhatsApp dans un délai inférieur à 5 minutes pendant ces horaires. Le Dimanche, les messages seront traités le Lundi matin.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">8. Puis-je suivre votre actualité sur les réseaux sociaux ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Bien sûr ! Nous publions nos nouveaux arrivages en avant-première sur Instagram et TikTok. C'est le meilleur moyen de ne pas rater les pièces uniques, car elles partent très vite. Suivez-nous sur @soladelux.</p></div></div>
+            </div>
+
+            <!-- Catégorie 2 : Qualité et Authenticité (9-16) -->
+            <div class="faq-category">
+                <h3 class="faq-category-title">2. Qualité et Authenticité</h3>
+                
+                <div class="faq-item"><button type="button" class="faq-question">9. Vos vêtements sont-ils authentiques ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Oui, à 100%. Nous avons une politique de tolérance zéro pour les contrefaçons. Nos experts inspectent minutieusement l'authenticité des marques, les étiquettes, les boutons et la qualité des coutures. Vous achetez en toute confiance.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">10. Comment vérifiez-vous l'authenticité des marques ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Nos équipes sont formées pour repérer les détails spécifiques à chaque marque (logo, typographie, étiquettes de composition, provenance de fabrication). Si un doute subsiste, la pièce est systématiquement rejetée et ne rejoint jamais notre catalogue.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">11. Dans quel état sont les vêtements ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Nos pièces sont classées en état "Premium" ou "Excellent". Cela signifie qu'elles ne présentent ni taches, ni déchirures, ni usures anormales. Elles sont nettoyées et prêtes à être portées. Si un micro-défaut est présent, il sera obligatoirement signalé.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">12. Que signifie l'état "Premium" ou "Excellent" ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>L'état "Premium" signifie que le vêtement est comme neuf, sans aucun signe d'usage. L'état "Excellent" signifie que le vêtement a été légèrement porté mais ne présente aucun défaut visible à 1 mètre de distance. La grande majorité de notre catalogue est en état Premium.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">13. Les articles ont-ils déjà été portés ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Étant donné que nous sommes une friperie, la plupart des articles ont déjà été portés. Toutefois, notre tri rigoureux garantit qu'ils n'ont aucune trace de usure gênante. Parfois, nous recevons des pièces "Neuves avec étiquette" (NWT) qui n'ont jamais été portées.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">14. Les vêtements sont-ils lavés avant la vente ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Les vêtements sont triés et désinfectés de manière professionnelle. Pour des raisons d'hygiène, nous vous recommandons de laver le vêtement à réception avant de le porter, selon les instructions de l'étiquette d'entretien.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">15. Que faire si je doute de l'authenticité d'un article reçu ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Bien que cela n'arrive jamais grâce à notre contrôle, si vous avez un doute, vous pouvez nous contacter via WhatsApp sous 24h. Nous vous demanderons des preuves, et si la contrefaçon est avérée (ce qui est exclu), nous vous rembourserons intégralement.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">16. Proposez-vous des pièces de luxe (Gucci, LV, etc.) ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Nous nous concentrons principalement sur le premium casual et professionnel (Ralph Lauren, Tommy, Lacoste, marques italiennes). Il arrive parfois que nous ayons des pièces de luxe. Abonnez-vous à nos réseaux sociaux pour être informé en temps réel.</p></div></div>
+            </div>
+
+            <!-- Catégorie 3 : Tailles et Mensurations (17-22) -->
+            <div class="faq-category">
+                <h3 class="faq-category-title">3. Tailles et Mensurations</h3>
+                
+                <div class="faq-item"><button type="button" class="faq-question">17. Comment choisir ma taille ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Chaque article possède une fiche avec la taille indiquée sur l'étiquette. Cependant, les tailles peuvent varier selon les marques. C'est pourquoi nous vous invitons vivement à demander les mensurations précises au conseiller WhatsApp avant de valider votre commande.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">18. Les tailles américaines ou européennes sont-elles respectées ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Nous indiquons la taille d'origine (ex: M US, 40 EU). Notre conseiller se fera un plaisir de vous convertir cette taille en centimètres (tour de poitrine, tour de taille, longueur) pour que vous puissiez comparer avec un vêtement que vous possédez déjà.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">19. Puis-je demander les mensurations exactes d'un vêtement ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Oui, c'est même fortement recommandé ! Demandez-le via WhatsApp. Notre équipe prendra le vêtement et vous communiquera les mesures au mètre ruban pour garantir un fit parfait.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">20. Que faire si je ne connais pas ma taille exacte ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Prenez votre vêtement préféré chez vous, mesurez-le à plat, et communiquez-nous les mesures. Nous les comparerons avec l'article que vous souhaitez acheter pour vous dire si la taille est bonne.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">21. Les tailles sont-elles modifiées par le lavage en friperie ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Il est possible qu'un vêtement ait légèrement rétréci au lavage par son ancien propriétaire. C'est justement pour cela que nous fournissons les mensurations réelles sur demande, pour éviter les mauvaises surprises.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">22. Avez-vous un guide des tailles standard ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Étant donné que chaque marque a sa propre coupe, un guide des tailces standard n'est pas fiable. Le seul guide fiable en friperie est la prise de mesure réelle, que nous offrons gracieusement sur WhatsApp.</p></div></div>
+            </div>
+
+            <!-- Catégorie 4 : Commandes et Réservations (23-30) -->
+            <div class="faq-category">
+                <h3 class="faq-category-title">4. Commandes et Réservations</h3>
+                
+                <div class="faq-item"><button type="button" class="faq-question">23. Comment passer une commande sur le site ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>C'est très simple ! Sélectionnez l'article qui vous plaît, cliquez sur le bouton "Commander sur WhatsApp". Vous serez mis en relation avec un conseiller qui vérifiera la disponibilité et validera votre commande.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">24. Pourquoi commander via WhatsApp ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Nous utilisons WhatsApp pour humaniser la vente et assurer un service client haut de gamme. Cela nous permet de vérifier ensemble la disponibilité en temps réel (les pièces sont uniques), de confirmer les mensurations et de vous garantir que l'article vous correspond avant de payer.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">25. La commande via le site engage-t-elle un paiement immédiat ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Non. Le bouton "Commander" ouvre une simple discussion WhatsApp. Aucun paiement n'est exigé tant que la disponibilité de l'article n'est pas confirmée par notre conseiller et que vous n'avez pas validé vos choix.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">26. Puis-je réserver un article sans l'acheter immédiatement ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Une fois la disponibilité confirmée, l'article est mis de côté pour vous pendant 2 heures le temps de finaliser le paiement. Au-delà de ce délai, l'article est remis en vente pour laisser la chance à d'autres clients.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">27. Puis-je commander plusieurs articles à la fois ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Oui ! Vous pouvez demander plusieurs articles en une seule conversation WhatsApp. Cela vous permettra de grouper les frais de livraison si vous habitez en province.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">28. Que se passe-t-il si l'article que je veux est déjà vendu ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Si l'article vient d'être vendu dans les minutes précédant votre message, le conseiller vous l'annoncera et vous proposera des alternatives similaires dans notre catalogue. Il n'y a pas de réassort possible en friperie.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">29. Comment savoir si un article est disponible ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>La seule méthode fiable est de cliquer sur "Commander sur WhatsApp". Notre catalogue est mis à jour en temps réel par notre équipe, mais le délai entre votre visualisation et votre clic peut créer une rupture de stock. Le conseiller est le seul juge de la disponibilité.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">30. Puis-je modifier ou annuler ma commande après validation ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Avant l'expédition du colis ou le départ du livreur, vous pouvez modifier ou annuler votre commande sans frais en avertissant votre conseiller WhatsApp. Une fois le colis remis au transporteur, l'annulation n'est plus possible.</p></div></div>
+            </div>
+
+            <!-- Catégorie 5 : Paiement et Transactions (31-36) -->
+            <div class="faq-category">
+                <h3 class="faq-category-title">5. Paiement et Transactions</h3>
+                
+                <div class="faq-item"><button type="button" class="faq-question">31. Quels sont les moyens de paiement acceptés ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Nous acceptons le paiement en espèces (Cash) à la livraison pour Brazzaville. Pour les expéditions en province, nous exigeons le paiement via Mobile Money (Airtel Money ou M-Pesa) avant l'envoi du colis.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">32. Puis-je payer par carte bancaire sur le site ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Non, nous n'avons pas de module de paiement par carte bancaire. Cette décision garantit que vos données bancaires ne transitent jamais par internet et élimine les risques de piratage ou de fraude.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">33. Comment fonctionne le paiement Mobile Money (Airtel/M-Pesa) ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Une fois la commande validée, le conseiller vous envoie le numéro Mobile Money de SOLA DE LUXE. Vous effectuez le transfert. Dès réception des fonds sur notre compte, le colis est expédié immédiatement.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">34. Le paiement à la livraison (Cash) est-il sécurisé ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Oui, le paiement Cash se fait uniquement entre les mains de notre livreur attitré à Brazzaville. Vous ne payez qu'au moment où vous avez le colis entre les mains. C'est le moyen le plus sûr pour vous.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">35. Comment prouver mon paiement Mobile Money ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Lorsque vous effectuez le transfert Airtel Money ou M-Pesa, prenez une capture d'écran du message de confirmation (en masquant votre solde si vous le souhaitez) et envoyez-la à votre conseiller WhatsApp. Cela accélère le processus d'expédition.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">36. Que se passe-t-il si je ne paie pas dans le délai imparti ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Si le paiement Mobile Money n'est pas effectué dans les 2 heures suivant la confirmation, l'article sera automatiquement remis en vente et votre commande annulée sans préavis.</p></div></div>
+            </div>
+
+            <!-- Catégorie 6 : Livraison et Logistique (37-44) -->
+            <div class="faq-category">
+                <h3 class="faq-category-title">6. Livraison et Logistique</h3>
+                
+                <div class="faq-item"><button type="button" class="faq-question">37. Quels sont les délais de livraison à Brazzaville ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Pour Brazzaville, nous offrons la livraison le jour même. Toute commande validée (et payée si c'est en Mobile Money) avant 14h00 est livrée le jour même. Les commandes de l'après-midi sont livrées le lendemain matin.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">38. Livrez-vous en province (Pointe-Noire, Dolisie, N'kayi) ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Oui, nous expédions dans toute la République du Congo. Pointe-Noire, Dolisie et N'kayi sont nos destinations principales en province. L'expédition se fait via des compagnies de transport terrestre ou aérien sécurisées.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">39. Combien coûtent les frais de livraison ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Les frais de livraison sont à la charge du client. À Brazzaville, la livraison commence à 1.000 FCFA. Pour les autres villes (Pointe-Noire, Dolisie, N'kayi), les frais d'expédition sont fixes à 2.000 FCFA, incluant un emballage renforcé pour protéger le vêtement.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">40. Comment se passe la remise du colis en province ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Une fois le colis arrivé à destination, le transporteur vous contactera directement. Vous devrez vous rendre à leur guichet (gare routière ou aéroport) muni de votre pièce d'identité et du code de retrait pour récupérer votre colis.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">41. Puis-je suivre l'acheminement de mon colis ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Oui, vous pouvez suivre l'avancée de votre colis à tout moment en demandant des nouvelles à votre conseiller WhatsApp. Pour les envois en province, nous vous communiquerons le nom du transporteur et le numéro de bordereau.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">42. Que faire si je suis absent lors de la livraison à Brazzaville ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Si le livreur se présente et que vous êtes absent, un avis de passage vous sera envoyé sur WhatsApp. Nous conviendrons d'un nouveau passage. Après 3 échecs de livraison par votre faute, les frais de port resteront acquis et la commande annulée.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">43. Livrez-vous le week-end ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Nos livraisons à Brazzaville s'effectuent principalement du Lundi au Samedi. Pour les expéditions en province, les colis peuvent arriver le week-end selon les rotations du transporteur, mais notre service client ne traite les messages que du Lundi au Samedi.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">44. Que se passe-t-il si le colis est perdu par le transporteur ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Bien que ce cas soit extrêmement rare, si le transporteur perd votre colis après que vous ayez payé, SOLA DE LUXE ouvrira une enquête avec le transporteur. En cas de perte confirmée, nous vous proposerons un remboursement ou l'envoi d'un article équivalent.</p></div></div>
+            </div>
+
+            <!-- Catégorie 7 : Retours, Échanges et SAV (45-50) -->
+            <div class="faq-category">
+                <h3 class="faq-category-title">7. Retours, Échanges et SAV</h3>
+                
+                <div class="faq-item"><button type="button" class="faq-question">45. Puis-je retourner un article s'il ne me va pas ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Étant donné qu'il s'agit de pièces uniques de seconde main, les retours pour simple changement d'avis ou erreur de taille ne sont pas acceptés. C'est pourquoi nous insistons sur la vérification des mensurations avant l'achat.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">46. Puis-je échanger un article contre un autre ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Non, l'échange est impossible car nous n'avons pas le même article en stock dans une taille différente. Chaque pièce est unique. La vente est donc ferme une fois l'article reçu, sauf en cas de défaut caché.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">47. Que faire si l'article reçu a un défaut non signalé ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Si l'article reçu présente un défaut majeur qui n'était ni mentionné dans la description, ni visible sur les photos, vous pouvez faire une réclamation. Prenez des photos du défaut et envoyez-les sur WhatsApp dans les 24h suivant la réception.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">48. Quel est le délai pour faire une réclamation ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Le délai est strictement fixé à 24 heures après la réception du colis (horlouse de l'opérateur téléphonique faisant foi). Passé ce délai, le vêtement sera réputé accepté sans réserve par le client, et aucune réclamation ne sera recevable.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">49. Comment se faire rembourser en cas de problème ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Si le retour est accepté par notre SAV (défaut caché majeur), vous devrez renvoyer l'article à Brazzaville. Dès réception et vérification, nous procéderons au remboursement intégral via Mobile Money (Airtel ou M-Pesa) dans un délai de 48h ouvrées.</p></div></div>
+                <div class="faq-item"><button type="button" class="faq-question">50. Vos articles sont-ils garantis ? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>L'état du vêtement est garanti conforme à la description au moment de la vente. Étant de la seconde main, il n'y a pas de garantie de durée de vie du tissu, mais nous garantissons l'authenticité de la marque et la absence de défauts cachés au moment de la livraison.</p></div></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Contact -->
+    <section class="faq-cta">
+        <div class="faq-cta-inner">
+            <div class="faq-cta-icon"><i class="fab fa-whatsapp"></i></div>
+            <h2>Vous ne trouvez pas votre réponse ?</h2>
+            <p>Notre équipe est disponible 7j/7 pour vous accompagner. Discutez directement avec un conseiller SOLA DE LUXE.</p>
+            <a href="https://wa.me/242064976334?text=Bonjour%20SOLA%20DE%20LUXE%2C%20j%27ai%20une%20question%20qui%20n%27est%20pas%20dans%20la%20FAQ." target="_blank" rel="noopener" class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Discuter sur WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div><img src="img/LogoWeb2.png" width="350" alt="Logo SOLA DE LUXE"></div>
+                    </a>
+                    <p>Boutique de friperie haut de gamme basée à Brazzaville. Des pièces uniques pour un style authentique.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/soladelux" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/soladelux" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://www.tiktok.com/@soladelux" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                        <a href="https://wa.me/242064976334" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Boutique</h4>
+                    <ul>
+                        <li><a href="index.html#nouveautes">Nouveautés</a></li>
+                        <li><a href="index.html#collections">Collections</a></li>
+                        <li><a href="index.html#nouveautes">Robes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="index.html#vision">À propos</a></li>
+                        <li><a href="index.html#zones">Livraison</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="conditions.html">Conditions d'utilisations</a></li>
+                        <li><a href="confidentialite.html">Confidentialité</a></li>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i style="color:gold"  class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Brazzaville, Rép. du Congo</span></li>
+                        <li><i style="color:gold" class="fab fa-whatsapp" aria-hidden="true"></i><span>+242 06 497 63 34</span></li>
+                        <li><i style="color:gold"  class="fas fa-clock" aria-hidden="true"></i><span>Lun — Sam : 7H30 — 18H30</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span class="gold"><a href="index.html"><b>SOLA DE LUXE</b></a></span>. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /* ===== ACCORDION FAQ ===== */
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.closest('.faq-item');
+                const isActive = item.classList.contains('active');
+                
+                // Fermer tous les autres (pour un effet accordéon strict)
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+                
+                // Ouvrir celui cliqué s'il ne l'était pas
+                if(!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        /* ===== MOBILE MENU ===== */
+        const menuToggle=document.getElementById('menuToggle'),navMobile=document.getElementById('navMobile');
+        if(menuToggle && navMobile) {
+            menuToggle.addEventListener('click',function(){
+                this.classList.toggle('active');
+                navMobile.classList.toggle('active');
+                document.body.style.overflow=navMobile.classList.contains('active')?'hidden':'';
+            });
+        }
+        function closeMobileMenu(){
+            if(menuToggle && navMobile){
+                menuToggle.classList.remove('active');
+                navMobile.classList.remove('active');
+                document.body.style.overflow='';
+            }
+        }
+
+        /* ===== HEADER SCROLL ===== */
+        window.addEventListener('scroll',function(){
+            const h=document.getElementById('header');
+            if(window.scrollY>50) h.classList.add('scrolled');
+            else h.classList.remove('scrolled');
+        },{passive:true});
+    </script>
+    <script src="fa/all.min.js"></script>
+</body>
+</html>

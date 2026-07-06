@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== SEO META ===== -->
+    <title>Politique de Confidentialité - 51 Articles Détaillés | SOLA DE LUXE</title>
+    <meta name="description" content="Consultez l'intégralité de notre Politique de Confidentialité (51 articles). Découvrez comment SOLA DE LUXE collecte, utilise, sécurise et protège vos données personnelles.">
+    <link rel="canonical" href="https://soladelux.netlify.app/confidentialite.html" />
+
+    <!-- ===== Balises Open Graph ===== -->
+    <meta property="og:title" content="Politique de Confidentialité Complète | Sola de Luxe" />
+    <meta property="og:description" content="Comment SOLA DE LUXE protège et gère vos données personnelles en République du Congo." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://soladelux.netlify.app/confidentialite.html" />
+    <meta property="og:image" content="https://soladelux.netlify.app/img/LogoWeb.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="fa/all.min.css">
+    <link rel="shortcut icon" href="img/LogoWeb.png" type="image/x-icon">
+    
+    <style>
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        :root{
+            --white:#FFFFFF;--black:#000000;--gold:#D4AF37;--gold-light:#E8D48B;--gold-dark:#B8960C;
+            --gray-50:#FAFAFA;--gray-100:#F5F5F5;--gray-200:#E5E5E5;--gray-300:#D4D4D4;
+            --gray-400:#A3A3A3;--gray-500:#737373;--gray-600:#525252;--gray-700:#404040;
+            --gray-800:#262626;--gray-900:#171717;
+            --font:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+            --transition:all .3s cubic-bezier(.25,.46,.45,.94);
+            --shadow-md:0 4px 16px rgba(0,0,0,.08);--shadow-lg:0 10px 40px rgba(0,0,0,.12);
+            --shadow-xl:0 20px 60px rgba(0,0,0,.15);--radius:12px;
+        }
+        html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+        body{font-family:var(--font);background:var(--white);color:var(--black);line-height:1.6;overflow-x:hidden}
+        a{text-decoration:none;color:inherit}ul,ol{list-style:none}img{max-width:100%;display:block;height:auto}
+        button{cursor:pointer;border:none;outline:none;font-family:var(--font)}
+
+        /* ===== HEADER ===== */
+        .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--gray-200);transition:var(--transition)}
+        .header.scrolled{box-shadow:0 2px 20px rgba(0,0,0,.06)}
+        .header-inner{max-width:1280px;margin:0 auto;padding:0 24px;height:72px;display:flex;align-items:center;justify-content:space-between}
+        .logo{display:flex;align-items:center;gap:10px;z-index:1001}
+        .nav-desktop{display:none;align-items:center;gap:28px}
+        .nav-desktop a{font-size:11px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:var(--gray-600);transition:var(--transition);position:relative}
+        .nav-desktop a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--gold);transition:width .3s ease}
+        .nav-desktop a:hover{color:var(--black)}
+        .nav-desktop a:hover::after{width:100%}
+        .header-actions{display:flex;align-items:center;gap:16px;z-index:1001}
+        .menu-toggle{display:flex;flex-direction:column;gap:5px;background:none;padding:8px;z-index:1001}
+        .menu-toggle span{display:block;width:22px;height:2px;background:var(--black);border-radius:2px;transition:var(--transition)}
+        .menu-toggle.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+        .menu-toggle.active span:nth-child(2){opacity:0}
+        .menu-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+        .nav-mobile{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;opacity:0;pointer-events:none;transition:opacity .4s ease}
+        .nav-mobile.active{opacity:1;pointer-events:all}
+        .nav-mobile a{font-size:24px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--black);transition:var(--transition)}
+        .nav-mobile a:hover{color:var(--gold)}
+
+        /* ===== PAGE HERO ===== */
+        .page-hero{position:relative;padding:140px 24px 60px;background:var(--gray-900);overflow:hidden;text-align:center}
+        .page-hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,rgba(212,175,55,.1) 0%,transparent 50%);pointer-events:none}
+        .page-hero-content{position:relative;z-index:2;max-width:800px;margin:0 auto}
+        .page-hero h1{font-size:clamp(36px,6vw,56px);font-weight:800;color:var(--white);letter-spacing:-2px;margin-bottom:16px;line-height:1.1}
+        .page-hero h1 .gold-text{background:linear-gradient(135deg,var(--gold-light),var(--gold),var(--gold-dark));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .page-hero p{font-size:16px;color:rgba(255,255,255,.7);max-width:600px;margin:0 auto}
+        .update-badge{display:inline-block;margin-top:20px;padding:6px 16px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:100px;font-size:12px;color:var(--gold-light);letter-spacing:1px;text-transform:uppercase}
+
+        /* ===== LEGAL CONTENT ===== */
+        .legal-section{padding:80px 24px;background:var(--white)}
+        .legal-inner{max-width:800px;margin:0 auto}
+        .legal-intro{font-size:16px;color:var(--gray-600);line-height:1.8;margin-bottom:40px;padding:24px;background:var(--gray-50);border-left:4px solid var(--gold);border-radius:0 12px 12px 0}
+        
+        .legal-article{margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--gray-200)}
+        .legal-article:last-child{border-bottom:none}
+        .legal-article h2{font-size:22px;font-weight:800;color:var(--black);letter-spacing:-.5px;margin-bottom:20px;display:flex;align-items:center;gap:12px}
+        .legal-article h2 i{color:var(--gold);font-size:20px}
+        .legal-article h3{font-size:16px;font-weight:700;color:var(--gray-800);margin-top:24px;margin-bottom:12px}
+        .legal-article p{font-size:15px;color:var(--gray-600);line-height:1.8;margin-bottom:16px}
+        .legal-article ul{margin-bottom:16px;padding-left:20px;list-style:disc}
+        .legal-article ul li{font-size:15px;color:var(--gray-600);line-height:1.8;margin-bottom:8px}
+        .legal-article strong{color:var(--black);font-weight:700}
+
+        /* ===== FOOTER ===== */
+        .footer{background:var(--gray-900);padding:64px 24px 0}
+        .footer-inner{max-width:1280px;margin:0 auto}
+        .footer-grid{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.08)}
+        .footer-brand .logo{margin-bottom:16px}
+        .footer-brand p{font-size:14px;color:rgba(255,255,255,.4);line-height:1.8;margin-bottom:24px;max-width:300px}
+        .footer-social{display:flex;gap:12px}
+        .footer-social a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:16px;transition:var(--transition)}
+        .footer-social a:hover{background:var(--gold);border-color:var(--gold);color:var(--black);transform:translateY(-2px)}
+        .footer-column h4{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--white);margin-bottom:20px}
+        .footer-column ul li{margin-bottom:12px}
+        .footer-column ul li a{font-size:14px;color:rgba(255,255,255,.4);transition:var(--transition)}
+        .footer-column ul li a:hover{color:var(--gold)}
+        .footer-contact li{display:flex;align-items:flex-start;gap:12px;margin-bottom:16px!important}
+        .footer-contact li i{color:var(--gold);font-size:14px;margin-top:3px}
+        .footer-contact li span{font-size:14px;color:var(--gray-400)}
+        .footer-bottom{padding:28px 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px}
+        .footer-bottom p{font-size:12px;color:rgba(255,255,255,.3)}
+        .footer-bottom .gold{color:var(--gold)}
+
+        /* ===== RESPONSIVE ===== */
+        @media(min-width:768px){
+            .nav-desktop{display:flex}
+            .menu-toggle{display:none}
+            .footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}
+        }
+        @media(min-width:1280px){
+            .header-inner{padding:0 48px}
+        }
+    </style>
+</head>
+<body>
+   <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <div> <img src="img/LogoWeb.png"  width="250" alt="Logo SOLA DE LUXE"> </div>
+            </a>
+            <nav class="nav-desktop" aria-label="Navigation principale">
+                <a href="index.html#collections"><b>Collections</b></a>
+                <a href="index.html#nouveautes"><b>Nouveautés</b></a>
+                <a href="index.html#apart"><b>Pourquoi nous</b></a>
+                <a href="index.html#zones"><b>Zone de service</b></a>
+                <a href="faq.html"><b>FAQ</b></a>
+                <a href="index.html#contact"><b>Contact</b></a>
+            </nav>
+            <div class="header-actions">
+                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+    <nav class="nav-mobile" id="navMobile" aria-label="Navigation mobile">
+        <a href="index.html#collections" onclick="closeMobileMenu()">Collections</a>
+        <a href="index.html#nouveautes" onclick="closeMobileMenu()">Nouveautés</a>
+        <a href="index.html#apart" onclick="closeMobileMenu()">Pourquoi nous</a>
+        <a href="index.html#zones" onclick="closeMobileMenu()">Zone de service</a>
+        <a href="faq.html" onclick="closeMobileMenu()">FAQ</a>
+        <a href="index.html#contact" onclick="closeMobileMenu()">Contact</a>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Confidentialité <span class="gold-text">et Données</span></h1>
+            <p>Chez SOLA DE LUXE, la protection de votre vie privée et de vos données personnelles est une priorité absolue. Découvrez comment nous gérons vos informations de manière transparente et sécurisée.</p>
+            <div class="update-badge">Dernière mise à jour : Mai 2026</div>
+        </div>
+    </section>
+
+    <section class="legal-section">
+        <div class="legal-inner">
+            
+            <div class="legal-intro">
+                <strong>Préambule :</strong> La présente Politique de Confidentialité a pour but de vous informer de manière exhaustive sur la manière dont SOLA DE LUXE collecte, utilise, partage et protège les données personnelles des utilisateurs de son site web et de ses services de livraison. En utilisant notre site et en passant commande, vous consentez aux pratiques décrites dans ce document. Nous nous engageons à respecter les principes de protection de la vie privée conformément aux lois en vigueur en République du Congo.
+            </div>
+
+            <!-- CHAPITRE 1 : DISPOSITIONS GÉNÉRALES (Articles 1-5) -->
+            <article class="legal-article"><h2><i class="fas fa-file-contract"></i> Article 1 : Objet de la Politique</h2><p>Cette politique a pour objet de définir de manière claire et transparente les modalités selon lesquelles SOLA DE LUXE collecte, traite, conserve et protège les données personnelles de ses clients et visiteurs. Elle explique vos droits et nos obligations légales.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-check-circle"></i> Article 2 : Acceptation de la Politique</h2><p>L'utilisation du site soladelux.netlify.app ou l'envoi d'un message WhatsApp pour passer commande implique l'acceptation pleine et entière de la présente politique de confidentialité. Si vous n'acceptez pas ces conditions, vous ne devez pas utiliser nos services.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-edit"></i> Article 3 : Modification de la Politique</h2><p>SOLA DE LUXE se réserve le droit de modifier cette politique à tout moment pour s'adapter aux évolutions légales ou technologiques. Les modifications entrent en vigueur dès leur publication. Il appartient à l'utilisateur de consulter régulièrement cette page.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-book"></i> Article 4 : Définitions</h2><p>Dans le cadre de cette politique : "Données personnelles" désigne toute information permettant d'identifier une personne (nom, téléphone). "Traitement" désigne toute opération appliquée à ces données. "Responsable" désigne SOLA DE LUXE.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-gavel"></i> Article 5 : Cadre Légal Applicable</h2><p>Le traitement des données est encadré par les lois sur la protection de la vie privée et les données personnelles en vigueur en République du Congo, ainsi que par les principes généraux du droit numérique.</p></article>
+
+            <!-- CHAPITRE 2 : LE RESPONSABLE DU TRAITEMENT (Articles 6-8) -->
+            <article class="legal-article"><h2><i class="fas fa-user-tie"></i> Article 6 : Identification du Responsable</h2><p>Le responsable du traitement des données est la société SOLA DE LUXE, entreprise individuelle basée à Brazzaville, République du Congo. Elle détermine seule les finalités de la collecte.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-envelope"></i> Article 7 : Coordonnées de Contact</h2><p>Pour toute question relative à vos données, vous pouvez contacter SOLA DE LUXE via WhatsApp au +242 06 497 63 34 ou par e-mail à soladeluxe@gmail.com. Ces canaux sont mis en place pour garantir une communication directe.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-user-shield"></i> Article 8 : Rôle du Délégué à la Protection</h2><p>Bien que non soumis à l'obligation légale d'avoir un Délégué à la Protection des Données (DPO) en raison de sa taille, SOLA DE LUXE a désigné en interne un responsable chargé de veiller à l'application stricte de cette politique.</p></article>
+
+            <!-- CHAPITRE 3 : COLLECTE DES DONNÉES (Articles 9-16) -->
+            <article class="legal-article"><h2><i class="fas fa-compress-arrows-alt"></i> Article 9 : Principe de Minimisation</h2><p>Nous appliquons strictement le principe de minimisation. Nous ne collectons que les données qui sont absolument indispensables à la création et à l'exécution de votre commande. Aucune donnée superflue n'est demandée.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-id-card"></i> Article 10 : Données d'Identification</h2><p>Lors d'une commande, nous collectons votre nom et votre prénom. Cette information est nécessaire pour identifier le client lors de la remise du colis par le livreur et pour personnaliser notre communication.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-phone"></i> Article 11 : Données de Contact</h2><p>Nous collectons votre numéro de téléphone mobile. Ce numéro est le pilier de notre service client, car il nous permet d'échanger via WhatsApp pour valider la disponibilité de l'article, confirmer la taille et organiser la livraison.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-map-marked-alt"></i> Article 12 : Données de Livraison</h2><p>Pour les livraisons à Brazzaville ou en province, nous demandons votre adresse complète (quartier, rue, point de repère). Cette donnée est exclusivement transmise au service de logistique pour l'acheminement du colis.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-mobile-alt"></i> Article 13 : Données de Transaction (Mobile Money)</h2><p>Pour les paiements en province via Airtel Money ou M-Pesa, nous conservons la preuve de la transaction (capture d'écran ou numéro de référence). Nous ne stockons jamais les codes secrets ou les données bancaires de l'utilisateur.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-globe"></i> Article 14 : Données de Navigation</h2><p>Lors de votre visite sur le site, des données techniques (adresse IP, type de navigateur, heure de connexion) sont collectées de manière anonyme par notre hébergeur (Netlify) à des fins de sécurité et de prévention du piratage.</p></article>
+            <article class="legal-article"><h2><i class="fab fa-whatsapp"></i> Article 15 : Données Issues de WhatsApp</h2><p>Les messages échangés avec notre service client via l'application WhatsApp contiennent des informations relatives à votre commande. Ces données sont hébergées par les serveurs de Meta (WhatsApp) et sont soumises à leur propre politique de confidentialité.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-ban"></i> Article 16 : Données Non Collectées</h2><p>SOLA DE LUXE ne demande jamais la création de mot de passe, ne collecte pas de données de santé, d'opinions politiques, d'orientation religieuse ou de données sensibles. Aucun module de paiement par carte bancaire n'est présent sur le site.</p></article>
+
+            <!-- CHAPITRE 4 : FINALITÉS ET BASES LÉGALES (Articles 17-23) -->
+            <article class="legal-article"><h2><i class="fas fa-shopping-cart"></i> Article 17 : Finalité d'Exécution du Contrat</h2><p>Vos données (nom, téléphone, adresse) sont traitées car elles sont indispensables pour finaliser votre achat. Sans ces données, la vente et la livraison de vêtements de friperie ne pourraient pas être réalisées.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-truck"></i> Article 18 : Finalité Logistique</h2><p>Vos coordonnées sont utilisées pour organiser la tournée du livreur à Brazzaville ou pour transmettre les informations au transporteur pour les expéditions vers Pointe-Noire, Dolisie ou N'kayi.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-headset"></i> Article 19 : Finalité de Service Client</h2><p>Votre numéro de téléphone est utilisé pour vous contacter en cas de problème (article indisponible, retard de livraison, défaut sur le vêtement) afin de vous proposer une solution amiable rapide.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-shield-alt"></i> Article 20 : Finalité de Sécurité</h2><p>Les données techniques de navigation servent à protéger le site contre les attaques informatiques (DDoS, tentatives de piratage) et à identifier les comportements frauduleux.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-handshake"></i> Article 21 : Base Légale - Exécution Contractuelle</h2><p>Le traitement de vos données d'identification et de livraison est fondé sur l'exécution du contrat de vente que vous passez avec SOLA DE LUXE.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-balance-scale"></i> Article 22 : Base Légale - Intérêt Légitime</h2><p>Le traitement des données de navigation repose sur notre intérêt légitime à protéger notre infrastructure informatique et à assurer la disponibilité du site pour tous les clients.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-check"></i> Article 23 : Base Légale - Consentement</h2><p>Lorsque vous remplissez le formulaire de contact en ligne, vous consentez explicitement à ce que nous utilisions votre e-mail et votre nom pour vous répondre.</p></article>
+
+            <!-- CHAPITRE 5 : PARTAGE ET DESTINATAIRES (Articles 24-29) -->
+            <article class="legal-article"><h2><i class="fas fa-lock"></i> Article 24 : Principe de Confidentialité</h2><p>SOLA DE LUXE s'engage à garder vos données strictement confidentielles. Nos conseillers sont soumis à une obligation de discrétion professionnelle.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-route"></i> Article 25 : Partage avec les Transporteurs</h2><p>Votre nom, numéro de téléphone et adresse de livraison sont communiqués au prestataire de transport (coursier urbain ou compagnie de bus pour la province). Ce partage est limité au strict nécessaire pour la remise du colis.</p></article>
+            <article class="legal-article"><h2><i class="fab fa-meta"></i> Article 26 : Partage avec WhatsApp (Meta)</h2><p>Les messages et numéros de téléphone utilisés pour les commandes transitent par l'application WhatsApp. SOLA DE LUXE n'a aucun contrôle sur la gestion de ces données par Meta, qui est soumise à ses propres conditions d'utilisation.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-server"></i> Article 27 : Partage avec l'Hébergeur (Netlify)</h2><p>Les données techniques et le contenu du site sont hébergés par Netlify Inc. (États-Unis). Netlify agit en tant que sous-traitant technique et est soumis à des accords de confidentialité stricts.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-money-check-alt"></i> Article 28 : Partage avec Opérateurs Mobile Money</h2><p>Lors d'un paiement M-Pesa ou Airtel Money, l'opérateur nous notifie de la réception des fonds. Nous ne partageons pas vos achats avec l'opérateur, nous ne faisons que constater la transaction.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-hand-holding-usd"></i> Article 29 : Absence de Revente Commerciale</h2><p>Nous vous le garantissons : vos données personnelles (numéro de téléphone, nom) ne sont jamais vendues, louées ou cédées à des tiers à des fins de prospection commerciale ou de marketing.</p></article>
+
+            <!-- CHAPITRE 6 : TRANSFERTS INTERNATIONAUX (Articles 30-32) -->
+            <article class="legal-article"><h2><i class="fas fa-globe-africa"></i> Article 30 : Localisation des Données</h2><p>Les données logistiques et de commande sont gérées localement à Brazzaville par nos équipes. Toutefois, l'hébergement web et l'application WhatsApp impliquent un transfert de données hors du territoire congolais.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-plane"></i> Article 31 : Encadrement des Transferts</h2><p>Ces transferts internationaux (vers les États-Unis ou l'Europe) sont encadrés par les politiques de confidentialité des prestataires (Netlify, Meta), qui appliquent des standards de protection élevés conformes aux réglementations internationales.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-key"></i> Article 32 : Chiffrement des Données en Transit</h2><p>Lorsque vos données transitent entre votre appareil et nos serveurs ou ceux de WhatsApp, elles sont protégées par des protocoles de chiffrement (HTTPS, chiffrement de bout en bout WhatsApp) empêchant toute interception par des tiers.</p></article>
+
+            <!-- CHAPITRE 7 : SÉCURITÉ (Articles 33-37) -->
+            <article class="legal-article"><h2><i class="fas fa-shield-virus"></i> Article 33 : Mesures Techniques</h2><p>Le site est sécurisé via le protocole HTTPS (TLS 1.3). Nous utilisons des en-têtes de sécurité stricts (CSP, HSTS, X-Frame-Options) pour empêcher les attaques de type "Man-in-the-Middle" ou "Clickjacking".</p></article>
+            <article class="legal-article"><h2><i class="fas fa-users-cog"></i> Article 34 : Mesures Organisationnelles</h2><p>L'accès aux messages WhatsApp et aux preuves de transactions est limité au gérant de SOLA DE LUXE et au conseiller client attitré. Les mots de passe des comptes professionnels sont robustes et renouvelés régulièrement.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-lock"></i> Article 35 : Sécurisation des Preuves de Paiement</h2><p>Les captures d'écran des paiements Mobile Money sont stockées sur des appareils sécurisés par code PIN ou biométrie, et ne sont accessibles qu'aux fins de vérification comptable.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-bug"></i> Article 36 : Gestion des Incidents de Sécurité</h2><p>En cas de violation de données (piratage, accès non autorisé), SOLA DE LUXE s'engage à réagir immédiatement pour sécuriser le système et à informer les clients concernés dans les meilleurs délais, conformément à la loi.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-exclamation-triangle"></i> Article 37 : Limites de la Sécurité sur Internet</h2><p>Malgré nos efforts, la sécurité absolue n'existe pas sur Internet. Nous ne pouvons garantir à 100% que vos données ne feront jamais l'objet d'une intrusion non autorisée, mais nous nous engageons à minimiser ce risque au maximum.</p></article>
+
+            <!-- CHAPITRE 8 : CONSERVATION (Articles 38-40) -->
+            <article class="legal-article"><h2><i class="fas fa-clock"></i> Article 38 : Durée de Conservation des Commandes</h2><p>Les données relatives à une commande (nom, adresse, article acheté) sont conservées pendant une durée de 3 ans à compter du dernier achat, pour des raisons de service client et de preuve en cas de litige.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-history"></i> Article 39 : Conservation des Logs de Navigation</h2><p>Les données techniques anonymisées (adresses IP) collectées par l'hébergeur sont conservées au maximum 30 jours pour des besoins de statistiques de fréquentation et de cybersécurité.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-trash-alt"></i> Article 40 : Anonymisation et Suppression</h2><p>Passé le délai de conservation de 3 ans, vos données personnelles sont soit définitivement supprimées de nos appareils, soit anonymisées de sorte qu'elles ne puissent plus être rattachées à votre identité.</p></article>
+
+            <!-- CHAPITRE 9 : COOKIES (Articles 41-43) -->
+            <article class="legal-article"><h2><i class="fas fa-cookie-bite"></i> Article 41 : Absence de Cookies Publicitaires</h2><p>Notre site respecte votre vie privée en n'utilisant aucun cookie publicitaire, ni pixel de suivi marketing (pas de Google Analytics, pas de pixel Facebook). Votre navigation sur notre catalogue est totalement anonyme.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-cog"></i> Article 42 : Technologies Techniques Nécessaires</h2><p>Nous utilisons uniquement le cache de votre navigateur pour stocker temporairement les polices de caractères (Google Fonts) et les icônes (FontAwesome) afin d'accélérer le temps de chargement de la page.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-check-double"></i> Article 43 : Absence de Bannière de Consentement</h2><p>Puisque nous n'utilisons pas de traceurs publicitaires, notre site n'est pas soumis à l'obligation d'afficher une bannière de consentement aux cookies, ce qui rend votre expérience de navigation plus fluide.</p></article>
+
+            <!-- CHAPITRE 10 : DROITS DES UTILISATEURS (Articles 44-51) -->
+            <article class="legal-article"><h2><i class="fas fa-eye"></i> Article 44 : Droit d'Accès</h2><p>Vous avez le droit de demander à tout moment une copie des données personnelles que nous détenons à votre sujet (historique des commandes, coordonnées enregistrées).</p></article>
+            <article class="legal-article"><h2><i class="fas fa-edit"></i> Article 45 : Droit de Rectification</h2><p>Si vos données sont inexactes (mauvaise adresse, changement de numéro de téléphone), vous pouvez exiger qu'elles soient corrigées sans délai pour garantir une bonne livraison.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-eraser"></i> Article 46 : Droit à l'Effacement (Oubli)</h2><p>Vous pouvez demander la suppression immédiate de toutes vos données personnelles de nos systèmes et de nos conversations WhatsApp professionnelles, sous réserve des obligations comptables légales.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-hand-paper"></i> Article 47 : Droit d'Opposition</h2><p>Vous pouvez vous opposer au traitement de vos données pour des raisons légitimes, par exemple si vous ne souhaitez plus commander chez nous et que nous cessions de vous contacter.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-pause-circle"></i> Article 48 : Droit à la Limitation</h2><p>Vous pouvez demander la suspension temporaire du traitement de vos données, notamment en cas de contestation sur la validité d'une commande ou d'un paiement.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-portrait"></i> Article 49 : Droit à la Portabilité</h2><p>Vous avez le droit de recevoir les données que vous nous avez fournies (nom, numéro, adresse) dans un format structuré (texte) pour les réutiliser ailleurs si vous le souhaitez.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-paper-plane"></i> Article 50 : Procédure d'Exercice des Droits</h2><p>Pour exercer vos droits, contactez-nous via WhatsApp au +242 06 497 63 34 ou par e-mail. Nous nous engageons à répondre à votre demande dans un délai maximum de 72 heures ouvrées, après vérification de votre identité.</p></article>
+            <article class="legal-article"><h2><i class="fas fa-gavel"></i> Article 51 : Droit d'Introduire une Réclamation</h2><p>Si vous estimez que nous ne respectons pas nos obligations en matière de protection des données, vous avez le droit d'introduire une réclamation auprès des autorités congolaises compétentes en matière de protection des données personnelles, ou de saisir les tribunaux de Brazzaville.</p></article>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div><img src="img/LogoWeb2.png" width="350" alt="Logo SOLA DE LUXE"></div>
+                    </a>
+                    <p>Boutique de friperie haut de gamme basée à Brazzaville. Des pièces uniques pour un style authentique.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/soladelux" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/soladelux" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://www.tiktok.com/@soladelux" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                        <a href="https://wa.me/242064976334" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Boutique</h4>
+                    <ul>
+                        <li><a href="index.html#nouveautes">Nouveautés</a></li>
+                        <li><a href="index.html#collections">Collections</a></li>
+                        <li><a href="index.html#nouveautes">Robes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="index.html#vision">À propos</a></li>
+                        <li><a href="index.html#zones">Livraison</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="conditions.html">Conditions d'utilisations</a></li>
+                        <li><a href="confidentialite.html">Confidentialité</a></li>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i style="color:gold"  class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Brazzaville, Rép. du Congo</span></li>
+                        <li><i style="color:gold" class="fab fa-whatsapp" aria-hidden="true"></i><span>+242 06 497 63 34</span></li>
+                        <li><i style="color:gold"  class="fas fa-clock" aria-hidden="true"></i><span>Lun — Sam : 7H30 — 18H30</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span class="gold"><a href="index.html"><b>SOLA DE LUXE</b></a></span>. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /* ===== MOBILE MENU ===== */
+        const menuToggle=document.getElementById('menuToggle'),navMobile=document.getElementById('navMobile');
+        if(menuToggle && navMobile) {
+            menuToggle.addEventListener('click',function(){
+                this.classList.toggle('active');
+                navMobile.classList.toggle('active');
+                document.body.style.overflow=navMobile.classList.contains('active')?'hidden':'';
+            });
+        }
+        function closeMobileMenu(){
+            if(menuToggle && navMobile){
+                menuToggle.classList.remove('active');
+                navMobile.classList.remove('active');
+                document.body.style.overflow='';
+            }
+        }
+
+        /* ===== HEADER SCROLL ===== */
+        window.addEventListener('scroll',function(){
+            const h=document.getElementById('header');
+            if(window.scrollY>50) h.classList.add('scrolled');
+            else h.classList.remove('scrolled');
+        },{passive:true});
+    </script>
+    <script src="fa/all.min.js"></script>
+</body>
+</html>

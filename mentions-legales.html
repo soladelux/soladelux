@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== SEO META ===== -->
+    <title>Mentions Légales | SOLA DE LUXE</title>
+    <meta name="description" content="Mentions légales complètes du site SOLA DE LUXE, friperie haut de gamme basée à Brazzaville. Informations sur l'éditeur, l'hébergeur, la propriété intellectuelle et les conditions d'utilisation.">
+    <link rel="canonical" href="https://soladelux.netlify.app/mentions-legales.html" />
+
+    <!-- ===== Balises Open Graph ===== -->
+    <meta property="og:title" content="Mentions Légales | Sola de Luxe" />
+    <meta property="og:description" content="Informations légales concernant le site SOLA DE LUXE." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://soladelux.netlify.app/mentions-legales.html" />
+    <meta property="og:image" content="https://soladelux.netlify.app/img/LogoWeb.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="fa/all.min.css">
+    <link rel="shortcut icon" href="img/LogoWeb.png" type="image/x-icon">
+    
+    <style>
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        :root{
+            --white:#FFFFFF;--black:#000000;--gold:#D4AF37;--gold-light:#E8D48B;--gold-dark:#B8960C;
+            --gray-50:#FAFAFA;--gray-100:#F5F5F5;--gray-200:#E5E5E5;--gray-300:#D4D4D4;
+            --gray-400:#A3A3A3;--gray-500:#737373;--gray-600:#525252;--gray-700:#404040;
+            --gray-800:#262626;--gray-900:#171717;
+            --font:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+            --transition:all .3s cubic-bezier(.25,.46,.45,.94);
+            --shadow-md:0 4px 16px rgba(0,0,0,.08);--shadow-lg:0 10px 40px rgba(0,0,0,.12);
+            --shadow-xl:0 20px 60px rgba(0,0,0,.15);--radius:12px;
+        }
+        html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+        body{font-family:var(--font);background:var(--white);color:var(--black);line-height:1.6;overflow-x:hidden}
+        a{text-decoration:none;color:inherit}ul,ol{list-style:none}img{max-width:100%;display:block;height:auto}
+        button{cursor:pointer;border:none;outline:none;font-family:var(--font)}
+
+        /* ===== HEADER ===== */
+        .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--gray-200);transition:var(--transition)}
+        .header.scrolled{box-shadow:0 2px 20px rgba(0,0,0,.06)}
+        .header-inner{max-width:1280px;margin:0 auto;padding:0 24px;height:72px;display:flex;align-items:center;justify-content:space-between}
+        .logo{display:flex;align-items:center;gap:10px;z-index:1001}
+        .nav-desktop{display:none;align-items:center;gap:28px}
+        .nav-desktop a{font-size:11px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:var(--gray-600);transition:var(--transition);position:relative}
+        .nav-desktop a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--gold);transition:width .3s ease}
+        .nav-desktop a:hover{color:var(--black)}
+        .nav-desktop a:hover::after{width:100%}
+        .header-actions{display:flex;align-items:center;gap:16px;z-index:1001}
+        .menu-toggle{display:flex;flex-direction:column;gap:5px;background:none;padding:8px;z-index:1001}
+        .menu-toggle span{display:block;width:22px;height:2px;background:var(--black);border-radius:2px;transition:var(--transition)}
+        .menu-toggle.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+        .menu-toggle.active span:nth-child(2){opacity:0}
+        .menu-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+        .nav-mobile{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;opacity:0;pointer-events:none;transition:opacity .4s ease}
+        .nav-mobile.active{opacity:1;pointer-events:all}
+        .nav-mobile a{font-size:24px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--black);transition:var(--transition)}
+        .nav-mobile a:hover{color:var(--gold)}
+
+        /* ===== PAGE HERO ===== */
+        .page-hero{position:relative;padding:140px 24px 60px;background:var(--gray-900);overflow:hidden;text-align:center}
+        .page-hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,rgba(212,175,55,.1) 0%,transparent 50%);pointer-events:none}
+        .page-hero-content{position:relative;z-index:2;max-width:800px;margin:0 auto}
+        .page-hero h1{font-size:clamp(36px,6vw,56px);font-weight:800;color:var(--white);letter-spacing:-2px;margin-bottom:16px;line-height:1.1}
+        .page-hero h1 .gold-text{background:linear-gradient(135deg,var(--gold-light),var(--gold),var(--gold-dark));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .page-hero p{font-size:16px;color:rgba(255,255,255,.7);max-width:600px;margin:0 auto}
+        .update-badge{display:inline-block;margin-top:20px;padding:6px 16px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:100px;font-size:12px;color:var(--gold-light);letter-spacing:1px;text-transform:uppercase}
+
+        /* ===== LEGAL CONTENT ===== */
+        .legal-section{padding:80px 24px;background:var(--white)}
+        .legal-inner{max-width:800px;margin:0 auto}
+        .legal-intro{font-size:16px;color:var(--gray-600);line-height:1.8;margin-bottom:40px;padding:24px;background:var(--gray-50);border-left:4px solid var(--gold);border-radius:0 12px 12px 0}
+        
+        .legal-article{margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--gray-200)}
+        .legal-article:last-child{border-bottom:none}
+        .legal-article h2{font-size:24px;font-weight:800;color:var(--black);letter-spacing:-.5px;margin-bottom:20px;display:flex;align-items:center;gap:12px}
+        .legal-article h2 i{color:var(--gold);font-size:20px}
+        .legal-article h3{font-size:16px;font-weight:700;color:var(--gray-800);margin-top:24px;margin-bottom:12px}
+        .legal-article p{font-size:15px;color:var(--gray-600);line-height:1.8;margin-bottom:16px}
+        .legal-article ul{margin-bottom:16px;padding-left:20px;list-style:disc}
+        .legal-article ul li{font-size:15px;color:var(--gray-600);line-height:1.8;margin-bottom:8px}
+        .legal-article strong{color:var(--black);font-weight:700}
+
+        /* ===== FOOTER ===== */
+        .footer{background:var(--gray-900);padding:64px 24px 0}
+        .footer-inner{max-width:1280px;margin:0 auto}
+        .footer-grid{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.08)}
+        .footer-brand .logo{margin-bottom:16px}
+        .footer-brand p{font-size:14px;color:rgba(255,255,255,.4);line-height:1.8;margin-bottom:24px;max-width:300px}
+        .footer-social{display:flex;gap:12px}
+        .footer-social a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:16px;transition:var(--transition)}
+        .footer-social a:hover{background:var(--gold);border-color:var(--gold);color:var(--black);transform:translateY(-2px)}
+        .footer-column h4{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--white);margin-bottom:20px}
+        .footer-column ul li{margin-bottom:12px}
+        .footer-column ul li a{font-size:14px;color:rgba(255,255,255,.4);transition:var(--transition)}
+        .footer-column ul li a:hover{color:var(--gold)}
+        .footer-contact li{display:flex;align-items:flex-start;gap:12px;margin-bottom:16px!important}
+        .footer-contact li i{color:var(--gold);font-size:14px;margin-top:3px}
+        .footer-contact li span{font-size:14px;color:var(--gray-400)}
+        .footer-bottom{padding:28px 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px}
+        .footer-bottom p{font-size:12px;color:rgba(255,255,255,.3)}
+        .footer-bottom .gold{color:var(--gold)}
+
+        /* ===== RESPONSIVE ===== */
+        @media(min-width:768px){
+            .nav-desktop{display:flex}
+            .menu-toggle{display:none}
+            .footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}
+        }
+        @media(min-width:1280px){
+            .header-inner{padding:0 48px}
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <div> <img src="img/LogoWeb.png"  width="250" alt="Logo SOLA DE LUXE"> </div>
+            </a>
+            <nav class="nav-desktop" aria-label="Navigation principale">
+                <a href="index.html#collections"><b>Collections</b></a>
+                <a href="index.html#nouveautes"><b>Nouveautés</b></a>
+                <a href="index.html#apart"><b>Pourquoi nous</b></a>
+                <a href="index.html#zones"><b>Zone de service</b></a>
+                <a href="faq.html"><b>FAQ</b></a>
+                <a href="index.html#contact"><b>Contact</b></a>
+            </nav>
+            <div class="header-actions">
+                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+    <nav class="nav-mobile" id="navMobile" aria-label="Navigation mobile">
+        <a href="index.html#collections" onclick="closeMobileMenu()">Collections</a>
+        <a href="index.html#nouveautes" onclick="closeMobileMenu()">Nouveautés</a>
+        <a href="index.html#apart" onclick="closeMobileMenu()">Pourquoi nous</a>
+        <a href="index.html#zones" onclick="closeMobileMenu()">Zone de service</a>
+        <a href="faq.html" onclick="closeMobileMenu()">FAQ</a>
+        <a href="index.html#contact" onclick="closeMobileMenu()">Contact</a>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Mentions <span class="gold-text">Légales</span></h1>
+            <p>Conformément aux dispositions légales en vigueur, voici les informations légales complètes régissant l'utilisation du site SOLA DE LUXE.</p>
+            <div class="update-badge">Dernière mise à jour : Mai 2026</div>
+        </div>
+    </section>
+
+    <section class="legal-section">
+        <div class="legal-inner">
+            
+            <div class="legal-intro">
+                <strong>Préambule :</strong> Le présent site web est la propriété exclusive de SOLA DE LUXE. La consultation, la navigation et l'utilisation de l'une quelconque des pages du site impliquent l'acceptation pleine et entière des présentes mentions légales par tout utilisateur.
+            </div>
+
+            <!-- Article 1 à 5 : Informations Générales -->
+            <article class="legal-article">
+                <h2><i class="fas fa-user-tie"></i> Article 1 : Éditeur du Site</h2>
+                <p>Le site SOLA DE LUXE est édité par :</p>
+                <ul>
+                    <li><strong>Nom de l'entreprise :</strong> SOLA DE LUXE</li>
+                    <li><strong>Forme juridique :</strong> Entreprise Individuelle</li>
+                    <li><strong>Adresse du siège social :</strong> Brazzaville, République du Congo</li>
+                    <li><strong>Numéro de téléphone :</strong> +242 06 497 63 34</li>
+                    <li><strong>Adresse e-mail :</strong> soladeluxe@gmail.com</li>
+                    <li><strong>Directeur de la publication :</strong> Ninon Hermellon</li>
+                </ul>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-server"></i> Article 2 : Hébergement du Site</h2>
+                <p>Le site est hébergé par l'entreprise Netlify Inc., située aux États-Unis. Les serveurs garantissent la disponibilité et la sécurité du site web de manière continue.</p>
+                <ul>
+                    <li><strong>Hébergeur :</strong> Netlify Inc.</li>
+                    <li><strong>Adresse :</strong> 44 Montgomery Street, Suite 300, San Francisco, California 94104, United States</li>
+                    <li><strong>Site web de l'hébergeur :</strong> <a href="https://www.netlify.com" target="_blank" rel="noopener" style="color:var(--gold-dark);">www.netlify.com</a></li>
+                </ul>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-database"></i> Article 3 : Fournisseurs de Services Tiers</h2>
+                <p>Pour assurer le bon fonctionnement technique et visuel du site, SOLA DE LUXE fait appel à des prestataires technologiques tiers :</p>
+                <ul>
+                    <li><strong>Google Fonts :</strong> Fournisseur de polices de caractères optimisées pour le web.</li>
+                    <li><strong>FontAwesome :</strong> Fournisseur de la bibliothèque d'icônes vectorielles utilisée pour l'interface graphique.</li>
+                    <li><strong>WhatsApp (Meta) :</strong> Service de messagerie utilisé pour la communication commerciale et la finalisation des commandes.</li>
+                </ul>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-copyright"></i> Article 4 : Propriété Intellectuelle</h2>
+                <p>L'ensemble du contenu de ce site (incluant de manière non limitative : textes, logos, marques, images, photographies, vidéos, sons, mise en page, charte graphique, structure du site, codes sources) est la propriété exclusive de SOLA DE LUXE, sauf mention contraire explicite.</p>
+                <p>Toute représentation, reproduction, modification, publication, adaptation totale ou partielle des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans l'autorisation écrite préalable de SOLA DE LUXE.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-trademark"></i> Article 5 : Marques et Droits d'Auteur</h2>
+                <p>Les marques de vêtements proposées à la vente sur le site sont la propriété de leurs détenteurs respectifs. SOLA DE LUXE agit en tant que revendeur indépendant de produits de seconde main et n'est pas affilié ou partenaire officiel de ces marques. Toute exploitation non autorisée des marques du site ou des marques des produits vendus sera poursuivie conformément aux lois sur la propriété intellectuelle.</p>
+            </article>
+
+            <!-- Article 6 à 10 : Utilisation et Responsabilités -->
+            <article class="legal-article">
+                <h2><i class="fas fa-mouse-pointer"></i> Article 6 : Licence d'Utilisation du Site</h2>
+                <p>SOLA DE LUXE accorde à l'utilisateur une licence personnelle, non-exclusive, révocable et non-transférable pour accéder et naviguer sur le site à des fins privées. L'utilisation du site à des fins commerciales sans autorisation est strictement interdite.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-ban"></i> Article 7 : Restrictions d'Utilisation</h2>
+                <p>L'utilisateur s'engage à ne pas :</p>
+                <ul>
+                    <li>Utiliser le site à des fins illégales ou frauduleuses.</li>
+                    <li>Tenter d'accéder à des zones restreintes du site ou de perturber le fonctionnement des serveurs.</li>
+                    <li>Extraire, copier ou collecter de manière automatisée les données du site (scraping).</li>
+                    <li>Introduire des virus, chevaux de Troie ou tout autre code malveillant.</li>
+                </ul>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-exclamation-triangle"></i> Article 8 : Responsabilité de l'Éditeur</h2>
+                <p>SOLA DE LUXE s'efforce de fournir sur ce site des informations aussi précises et à jour que possible. Toutefois, l'éditeur ne peut être tenu responsable des omissions, des inexactitudes et des carences dans la mise à jour, qu'elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-user-shield"></i> Article 9 : Responsabilité de l'Utilisateur</h2>
+                <p>L'utilisateur est responsable de la conservation de ses propres données de connexion (si applicable) et de l'utilisation qui est faite de son terminal. Il s'engage à utiliser le site dans le respect des lois en vigueur en République du Congo.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-link"></i> Article 10 : Liens Hypertextes</h2>
+                <p>Le site peut contenir des liens hypertextes vers d'autres sites internet (notamment WhatsApp, Instagram, Facebook, TikTok) qui ne sont pas sous le contrôle de SOLA DE LUXE. L'éditeur n'a aucun contrôle sur la nature, le contenu et la disponibilité de ces sites externes. L'inclusion de ces liens n'implique pas une recommandation.</p>
+            </article>
+
+            <!-- Article 11 à 15 : Données et Cookies -->
+            <article class="legal-article">
+                <h2><i class="fas fa-database"></i> Article 11 : Protection des Données Personnelles</h2>
+                <p>Conformément à la loi sur la protection de la vie privée, le site SOLA DE LUXE collecte et traite les données personnelles des utilisateurs (nom, numéro de téléphone, adresse de livraison) uniquement dans le but de traiter les commandes et d'assurer le service client. Pour plus d'informations, veuillez consulter notre <a href="confidentialite.html" style="color:var(--gold-dark);">Politique de Confidentialité</a>.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-cookie-bite"></i> Article 12 : Utilisation des Cookies</h2>
+                <p>La navigation sur le site SOLA DE LUXE ne nécessite pas l'enregistrement de cookies publicitaires tiers. Des cookies techniques strictement nécessaires au bon affichage du site (polices, icônes) peuvent être utilisés. Aucune donnée de navigation n'est revendue à des fins marketing.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-lock"></i> Article 13 : Sécurité du Site</h2>
+                <p>L'éditeur met en œuvre des mesures techniques et organisationnelles appropriées pour protéger le site contre les accès non autorisés, les altérations ou la divulgation de données. Le site est sécurisé via le protocole HTTPS et des en-têtes de sécurité strictes (CSP, HSTS).</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-eye"></i> Article 14 : Droit d'Accès et de Rectification</h2>
+                <p>Conformément aux lois applicables sur la protection des données, l'utilisateur dispose d'un droit d'accès, de modification, de rectification et de suppression des données le concernant. Pour exercer ce droit, l'utilisateur doit contacter SOLA DE LUXE via WhatsApp ou par e-mail.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-sync-alt"></i> Article 15 : Conservation des Données</h2>
+                <p>Les données personnelles des utilisateurs sont conservées pour une durée maximale de 3 ans après le dernier échange commercial, sauf obligation légale de conservation contraire.</p>
+            </article>
+
+            <!-- Article 16 à 20 : Vente et Produits -->
+            <article class="legal-article">
+                <h2><i class="fas fa-tshirt"></i> Article 16 : Nature des Produits</h2>
+                <p>SOLA DE LUXE est une friperie haut de gamme. Les produits proposés sont des vêtements et accessoires de seconde main. Bien que contrôlés et triés avec la plus grande rigueur, ces articles peuvent présenter de très légères traces d'usage. L'état exact de chaque pièce est précisé dans sa fiche descriptive.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-tag"></i> Article 17 : Disponibilité des Produits</h2>
+                <p>Les produits proposés à la vente sont des pièces uniques. L'acceptation de la commande par SOLA DE LUXE est conditionnée par la disponibilité réelle du stock au moment de la validation. En cas d'indisponibilité, le client en sera informé via WhatsApp.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-money-bill-wave"></i> Article 18 : Prix et Taxes</h2>
+                <p>Les prix des produits sont indiqués en Francs CFA (FCFA) et incluent toutes les taxes applicables. Les frais de livraison ne sont pas inclus dans le prix affiché et sont communiqués au client lors de la validation de la commande.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-mobile-alt"></i> Article 19 : Modalités de Commande</h2>
+                <p>Le processus d'achat s'effectue en cliquant sur le bouton "Commander sur WhatsApp", ce qui met le client en relation directe avec un conseiller SOLA DE LUXE. La commande n'est ferme et définitive qu'après confirmation de la disponibilité et accord sur le mode de paiement entre le client et le conseiller.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-wallet"></i> Article 20 : Modalités de Paiement</h2>
+                <p>Les paiements s'effectuent soit en espèces (Cash) à la livraison pour Brazzaville, soit via Mobile Money (Airtel Money / M-Pesa) pour le reste du pays. Aucun paiement par carte bancaire n'est requis sur le site, garantissant ainsi la sécurité financière de l'utilisateur.</p>
+            </article>
+
+            <!-- Article 21 à 25 : Livraisons et Retours -->
+            <article class="legal-article">
+                <h2><i class="fas fa-truck"></i> Article 21 : Modalités de Livraison</h2>
+                <p>Les commandes sont livrées à l'adresse indiquée par le client lors de la commande via WhatsApp. Les délais de livraison (le jour même à Brazzaville, 24-48h en province) sont communiqués à titre indicatif. Tout retard ne peut engager la responsabilité de SOLA DE LUXE.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-box-open"></i> Article 22 : Transfert de Risques</h2>
+                <p>Le transfert des risques sur les produits vendus s'effectue au moment de la remise physique du colis au client ou à son représentant. La signature ou la confirmation de réception vaut acceptation sans réserve de l'état du produit livré.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-undo-alt"></i> Article 23 : Droit de Rétractation et Retours</h2>
+                <p>Compte tenu de la nature de l'activité (vente de produits de seconde main), le droit de rétractation de 14 jours n'est pas applicable de plein droit. Les retours ne sont acceptés que si le produit présente un défaut majeur non signalé lors de la vente, et ce, dans un délai maximum de 24h après réception. Se référer à nos <a href="conditions.html" style="color:var(--gold-dark);">CGV</a> pour plus de détails.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-shield-alt"></i> Article 24 : Garanties Légales</h2>
+                <p>Les produits de seconde main vendus par SOLA DE LUXE ne sont pas couverts par la garantie légale de conformité applicable aux biens neufs. Toutefois, SOLA DE LUXE garantit que l'état du vêtement est conforme à la description qui en a été faite sur le site et lors de l'échange WhatsApp.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-headset"></i> Article 25 : Service Client</h2>
+                <p>Pour toute question, réclamation ou demande d'information, le service client de SOLA DE LUXE est disponible du lundi au samedi, de 7H30 à 18H30, via l'application WhatsApp au +242 06 497 63 34 ou par e-mail à soladeluxe@gmail.com.</p>
+            </article>
+
+            <!-- Article 26 à 30 : Dispositions Légales et Techniques -->
+            <article class="legal-article">
+                <h2><i class="fas fa-bolt"></i> Article 26 : Force Majeure</h2>
+                <p>SOLA DE LUXE ne pourra être tenue responsable de l'inexécution de ses obligations résultant d'un cas de force majeure tel que défini par la jurisprudence congolaise (intempéries, catastrophes naturelles, pannes de réseau internet, grèves, décisions gouvernementales, etc.).</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-edit"></i> Article 27 : Modification des Mentions Légales</h2>
+                <p>SOLA DE LUXE se réserve le droit de modifier, à tout moment et sans préavis, les présentes mentions légales afin de les adapter aux évolutions du site, de la législation ou de ses pratiques. L'utilisateur est invité à consulter régulièrement cette page.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-hourglass-half"></i> Article 28 : Durée de Validité</h2>
+                <p>Les présentes mentions légales sont valables pour toute la durée d'exploitation du site internet SOLA DE LUXE. Elles s'appliquent dès la première connexion de l'utilisateur sur le site.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-puzzle-piece"></i> Article 29 : Indépendance des Clauses</h2>
+                <p>Si une ou plusieurs stipulations des présentes mentions légales sont tenues pour non valides ou déclarées telles en application d'une loi, d'un règlement ou à la suite d'une décision définitive d'une juridiction compétente, les autres stipulations garderont toute leur force et leur portée.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-handshake-slash"></i> Article 30 : Non-Renonciation</h2>
+                <p>Le fait pour SOLA DE LUXE de ne pas se prévaloir à un moment donné de l'une quelconque des présentes mentions légales ne peut être interprété comme une renonciation à se prévaloir ultérieurement de ces mêmes mentions.</p>
+            </article>
+
+            <!-- Article 31 à 33 : Clôture -->
+            <article class="legal-article">
+                <h2><i class="fas fa-globe"></i> Article 31 : Intégralité</h2>
+                <p>Les présentes mentions légales exprent l'intégralité de l'accord entre SOLA DE LUXE et l'utilisateur concernant l'utilisation du site. Elles remplacent toute communication, proposition ou accord antérieur ayant le même objet.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-gavel"></i> Article 32 : Droit Applicable et Juridiction</h2>
+                <p>Les présentes mentions légales sont régies par le droit de la République du Congo. En cas de litige, et après une tentative de recherche d'une solution à l'amiable, les tribunaux congolais seront seuls compétents pour connaître de ce litige.</p>
+            </article>
+
+            <article class="legal-article">
+                <h2><i class="fas fa-envelope"></i> Article 33 : Contact pour les Mentions Légales</h2>
+                <p>Pour toute question relative aux présentes mentions légales, vous pouvez contacter l'éditeur aux coordonnées suivantes :</p>
+                <ul>
+                    <li><strong>Adresse e-mail :</strong> soladeluxe@gmail.com</li>
+                    <li><strong>WhatsApp :</strong> +242 06 497 63 34</li>
+                </ul>
+            </article>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div><img src="img/LogoWeb2.png" width="350" alt="Logo SOLA DE LUXE"></div>
+                    </a>
+                    <p>Boutique de friperie haut de gamme basée à Brazzaville. Des pièces uniques pour un style authentique.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/soladelux" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/soladelux" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://www.tiktok.com/@soladelux" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                        <a href="https://wa.me/242064976334" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Boutique</h4>
+                    <ul>
+                        <li><a href="index.html#nouveautes">Nouveautés</a></li>
+                        <li><a href="index.html#collections">Collections</a></li>
+                        <li><a href="index.html#nouveautes">Robes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="index.html#vision">À propos</a></li>
+                        <li><a href="index.html#zones">Livraison</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="conditions.html">Conditions d'utilisations</a></li>
+                        <li><a href="confidentialite.html">Confidentialité</a></li>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i style="color:gold"  class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Brazzaville, Rép. du Congo</span></li>
+                        <li><i style="color:gold" class="fab fa-whatsapp" aria-hidden="true"></i><span>+242 06 497 63 34</span></li>
+                        <li><i style="color:gold"  class="fas fa-clock" aria-hidden="true"></i><span>Lun — Sam : 7H30 — 18H30</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span class="gold"><a href="index.html"><b>SOLA DE LUXE</b></a></span>. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /* ===== MOBILE MENU ===== */
+        const menuToggle=document.getElementById('menuToggle'),navMobile=document.getElementById('navMobile');
+        if(menuToggle && navMobile) {
+            menuToggle.addEventListener('click',function(){
+                this.classList.toggle('active');
+                navMobile.classList.toggle('active');
+                document.body.style.overflow=navMobile.classList.contains('active')?'hidden':'';
+            });
+        }
+        function closeMobileMenu(){
+            if(menuToggle && navMobile){
+                menuToggle.classList.remove('active');
+                navMobile.classList.remove('active');
+                document.body.style.overflow='';
+            }
+        }
+
+        /* ===== HEADER SCROLL ===== */
+        window.addEventListener('scroll',function(){
+            const h=document.getElementById('header');
+            if(window.scrollY>50) h.classList.add('scrolled');
+            else h.classList.remove('scrolled');
+        },{passive:true});
+    </script>
+    <script src="fa/all.min.js"></script>
+</body>
+</html>
